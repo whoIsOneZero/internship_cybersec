@@ -1,0 +1,4 @@
+$set: 
+set and display environmental variables within a shell session
+some commands too
+- SHELL, HOME, PWD, USER, HOST, PID
