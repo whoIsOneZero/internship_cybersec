@@ -1,0 +1,42 @@
+### Network Interfaces ###
+-Linux: 
+$ ifconfig
+$ ip a s
+$ ip addr
+
+- Windows
+$ ipconfig
+
+1. Network Security Protocols
+-HTTP
+-SSL
+-SSH
+
+-SSH
+2. Network Management Protocols
+-ICMP: ping
+-SNMP
+
+**Network managing command line interface
+$ nmcli networking off
+
+## Accessing webpages in terminal ##
+$ wget
+$ curl
+
+### HTTP Response codes ###
+https://developer.mozilla.org
+
+[100 - 199] Informational response
+[200 - 299] Successful response
+[300 - 399] Redirection message
+[400 - 499] Client error response
+[500 - 599] Server error response
+
+### HTTP Request Methods ###
+GET, PUT, POST, DELETE, PATCH, HEAD, OPTIONS, TRACE, CONNECT
+
+*** Check your IP address ***
+https://whoer.net
+
+** Download packet tracer **
