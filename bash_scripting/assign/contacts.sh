@@ -1,8 +1,8 @@
 #!/bin/bash
 
-### A SCRIPT THAT CREATES A PHONEBOOK ###
+### A SCRIPT THAT SAVES CONTACTS AND ALLOWS FOR SEARCHING ###
 
-echo -e "\t\t\t*** WEETCH Contacts***\nPlease select an option (1 or 2)."
+echo -e "\t\t\t*** WEETCH Contacts ***\nPlease select an option (1 or 2)."
 printf "[1] Make a new contact entry.\n[2] Make a search.\n"
 read -p ">> " choice
 
@@ -65,7 +65,15 @@ fi
 
 ### SEARCH FOR CONTACT ###
 if [ $choice == '2' ]
-	OB
 then
-	echo "Search for contacts."
+	echo "Enter the name or phone number to search for the contact."
+	echo "NB: Do not enter the full name. Either first, last, or other names."
+	read -p ">> " search
+
+	grep "$search" PHONEBOOK
+
+	if [ $? -eq 1 ]
+	then
+		echo "Oops! Could not find a matching contact"
+	fi
 fi
