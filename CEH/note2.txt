@@ -1,0 +1,33 @@
+*** INFORMATION GATHERING / FOOTPRINTING (passive) ***
+
+1. Google Dorks
+https://www.boxpiper.com/posts/google-dork-list
+https://www.exploit-db.com/google-hacking-database
+
+
+Examples
+filetype:pdf inurl:knust.edu.gh
+intext:"Login" inurl:knust.edu.gh
+
+TASK:
+filetype:xlsx intitle:"financial" inurl:sitename
+inurl:admin ext:sql
+ext:sql intitle:"index of" intext:"admin"
+intitle:"Cisco Integrated Management Controller Login"
+
+
+2. Shodan (speicalizes in IoT devices)
+https://www.shodan.io
+
+Examples:
+city:"New York"
+
+
+3. Censys
+https://search.censys.io
+
+### Tools in Kali
+4. netcraft
+https://www.netcraft.com
+- Subdomain enumeration
+https://searchdns.netcraft.com
