@@ -1,0 +1,44 @@
+*** INFORMATION GATHERING / FOOTPRINTING (passive) ***
+
+1. Google Dorks
+https://www.boxpiper.com/posts/google-dork-list
+https://www.exploit-db.com/google-hacking-database
+
+
+Examples
+filetype:pdf inurl:knust.edu.gh
+intext:"Login" inurl:knust.edu.gh
+
+TASK:
+filetype:xlsx intitle:"financial" inurl:sitename
+inurl:admin ext:sql
+ext:sql intitle:"index of" intext:"admin"
+intitle:"Cisco Integrated Management Controller Login"
+
+
+2. Shodan (speicalizes in IoT devices)
+https://www.shodan.io
+
+Examples:
+city:"New York"
+
+
+3. Censys
+https://search.censys.io
+
+### Tools in Kali
+4. netcraft
+https://www.netcraft.com
+- Subdomain enumeration
+https://searchdns.netcraft.com
+
+
+5. sublist3r (in the terminal)
+Clone the repo from GitHub and install the requirements.
+Running:
+- create a link and add to usr/bin OR
+- make a alias OR
+- run with python
+
+6. OSNIT framework
+osnitframework.com

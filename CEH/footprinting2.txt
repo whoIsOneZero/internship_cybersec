@@ -1,0 +1,41 @@
+### INFO GATHERING ###
+
+* Wordlists, Metadata and DNS Recon *
+
+# WORDLISTS #
+/usr/share/wordlists
+- seclists
+Creating custom wordlists
+$ cewl
+$ cewl -v -m 4 -o -w google-wordlist.txt --lowercase google.com
+
+# METADATA RECON #
+Tool: metagoofil
+To extract metadata in it's unmodified form.
+$ metagoofil -d {url to the particular file} -e 10 -l 2 -t pdf -u {User agent} -w
+
+View the metadata:
+$ exiftool [filename.ext]
+
+# DNS Enumeration #
+$ dnsrecon -d google.com -v -j google-dns.json
+
+$ dig google.com -4
+
+Find name server information about a site
+$ nslookup google.com
+
+## Email enumeration ##
+- theharvester
+$ theharvester -d google.com -l 20 -f results -b [sources] bing,brave,censys,yahoo
+Use a json formatter after getting the results.
+
+
+### IP address reckon ###
+** IP lookup
+- https://whoer.net
+- https://whatismyipaddress.com
+- https://whatismyipi/com
+
+** Traceroute
+$ sudo raceroute -4 -I 17.253.144.10
