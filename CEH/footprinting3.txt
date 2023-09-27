@@ -1,0 +1,20 @@
+### PASSIVE FOOTPRINTING ###
+
+** Maltego Community Edition 4.5 (GUI)
+** Maltego CaseFile 4.4.1
+For mapping related information.
+
+
+** recon-ng (cli)
+For information gathering and report generation.
+
+
+### COUNTERMEASURES TO FOOTPRINTING ###
+1. Review availability information.
+2. End-user security awareness training.
+3. Choosing best and secured whois services.
+4. Disabling/obscuring location related services where necessary.
+5. Sanitize job listings.4. Disabling/obscuring location related services where necessary.
+5. Sanitize job listings.4. Disabling/obscuring location related services where necessary.
+5. Sanitize job listings.4. Disabling/obscuring location related services where necessary.
+5. Sanitize job listings.
