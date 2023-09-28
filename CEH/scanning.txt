@@ -1,0 +1,73 @@
+### SCANNING WITH nmap ###
+
+- Check for your IP address
+ip a s | grep inet
+
+- Do a list scan to find hosts connected
+$ nmap -sL 10.10.10.0/24
+> Target list: 256
+
+- Host discover
+$ nmap -sn 10.10.10.0/24
+> 10 Hosts up
+
+- Port and service scan
+Ports: 
+$ nmap --top-ports 1000 10.10.10.0/24 -v
+
+Service Targets: http, ssh, ftp, others.
+
+Nmap scan report for 10.10.10.1
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+23/tcp   open  telnet
+80/tcp   open  http
+2000/tcp open  cisco-sccp
+
+Nmap scan report for 10.10.10.10
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap scan report for 10.10.10.11
+PORT     STATE  SERVICE
+22/tcp   closed ssh
+80/tcp   open   http
+427/tcp  open   svrloc
+443/tcp  open   https
+
+Nmap scan report for 10.10.10.215
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+80/tcp   open  http
+
+Nmap scan report for 10.10.10.217
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Nmap scan report for 10.10.10.225
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3389/tcp open  ms-wbt-server
+9090/tcp open  zeus-admin
+
+Nmap scan report for 10.10.10.245
+PORT     STATE SERVICE
+22/tcp   open  ssh
+443/tcp  open  https
+3389/tcp open  ms-wbt-server
+5900/tcp open  vnc
+9090/tcp open  zeus-admin
+
+** Save the IP addresses running some services into a file.
+
+** Scan for service/version info from the file created.
+$ nmap -iL nmaplist.txt -sV -v
+> http services on 10.10.10.215 and 10.10.10.217
+
+*** TARGET ***
+10.10.10.217 running DVWA web app

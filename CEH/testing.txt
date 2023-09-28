@@ -1,0 +1,14 @@
+### TESTING WITH Burp Suite (community edition) ###
+Acts as a middleman b/n a client (the web app) and a server.
+
+- Proxy  tab.
+	- Intercept
+	 Intercept is off.
+	Open the Burp Suite built-in browser.
+	Go to the IP address hosting DVWA.
+-
+
+
+### Other tools ###
+- wfuzz
+- hydra
