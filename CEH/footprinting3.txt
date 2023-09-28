@@ -14,7 +14,4 @@ For information gathering and report generation.
 2. End-user security awareness training.
 3. Choosing best and secured whois services.
 4. Disabling/obscuring location related services where necessary.
-5. Sanitize job listings.4. Disabling/obscuring location related services where necessary.
-5. Sanitize job listings.4. Disabling/obscuring location related services where necessary.
-5. Sanitize job listings.4. Disabling/obscuring location related services where necessary.
 5. Sanitize job listings.
